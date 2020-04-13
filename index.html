@@ -1,0 +1,22 @@
+<html>
+<head>
+
+<title>url opener</title>
+<script>
+	function openwin(){
+		times = f1.t1.value;
+		url = f1.t2.value;
+		for( i = 0; i < times; i++ ) {
+			window.open(url);
+			}
+	}
+</script>
+
+</head>
+<body>
+<form name="f1">
+	url:<input type="text" name="t2" size=100 value=""><br>
+	times:<input type="number" name="t1" value="10"><br>
+	<a href="javascript:void('0');" onclick="openwin()">open</a>
+</form>
+</body>
